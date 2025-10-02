@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(black,white);
+    color: black;
+}
+.container{
+    height: 400PX;
+    width: 400px;
+    background: linear-gradient(green,black);
+    border-radius: 10px;
+    padding: 25px;
+    color: black;
+}
+.cards,
+.card,
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    height: 60%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cards .card{
+    position: relative;
+    width: calc(100%  / 4 - 10px);
+    height:calc(100%  / 4 - 10px);
+    cursor: pointer;
+    perspective: 1000px;
+}
+.cards .card .view{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transition: transform 0.5S ease;
+}
+.cards .card .font-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY('0deg');
+    z-index: 2;
+}
+.cards .card .back-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+
+}
+.cards .card:hover .front-view{
+    transform: rotateY(180deg);
+
+}
+.cards .card:hover .back-view{
+    transform: rotateY(0deg);
+
+}
+.card > .front-view span{
+    font-size: 40px;
+
+
+}
+.card > .back-view img{
+    max-width: 25px;
+}
+#bg-timer {
+  height: 60px;
+  position: right;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-family: "Jost", sans-serif;
+  font-size: 20PX;              /* énorme, s’adapte à la taille d’écran */
+  font-weight: 700;
+  color: white; /* quasi transparent */
+  text-align: center;
+  pointer-events: none;         /* on ne peut pas cliquer dessus */
+  user-select: none;            /* on ne peut pas le sélectionner */
+  margin-bottom: 290px; 
+  margin-right: 60px;         
+        /* en dessous des cartes */
+}
+
+    
+
+/* Place le plateau au‑dessus du chrono */
+.cards {
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+.chrono{
+    color: black;
+}

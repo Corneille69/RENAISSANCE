@@ -1,0 +1,78 @@
+[
+    {
+      "question": "Quelle est la capitale du Burkina Faso ?",
+      "options": ["Niamey", "Ouagadougou", "Lomé", "Cotonou"],
+      "answer": "Ouagadougou"
+    },
+    {
+      "question": "Quel est le plus long fleuve du monde ?",
+      "options": ["Nil", "Amazon", "Mississippi", "Congo"],
+      "answer": "Amazon"
+    },
+    {
+      "question": "Combien de continents y a-t-il sur Terre ?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "question": "Quel océan borde la côte ouest de l’Afrique ?",
+      "options": ["Océan Indien", "Océan Atlantique", "Océan Arctique", "Mer Méditerranée"],
+      "answer": "Océan Atlantique"
+    },
+    {
+      "question": "Dans quel pays se trouve la Tour Eiffel ?",
+      "options": ["Allemagne", "Italie", "Espagne", "France"],
+      "answer": "France"
+    },
+    {
+      "question": "Quel est le plus grand désert chaud du monde ?",
+      "options": ["Kalahari", "Gobi", "Sahara", "Arizona"],
+      "answer": "Sahara"
+    },
+    {
+      "question": "Quelle est la capitale de l’Afrique du Sud ?",
+      "options": ["Le Cap", "Pretoria", "Johannesburg", "Durban"],
+      "answer": "Pretoria"
+    },
+    {
+      "question": "Quel est le pays le plus peuplé du monde ?",
+      "options": ["Chine", "Inde", "États-Unis", "Indonésie"],
+      "answer": "Chine"
+    },
+    {
+      "question": "Quel est le plus petit pays du monde ?",
+      "options": ["Monaco", "Saint-Marin", "Vatican", "Malte"],
+      "answer": "Vatican"
+    },
+    {
+      "question": "Dans quel pays se trouve le Kilimandjaro ?",
+      "options": ["Kenya", "Ouganda", "Tanzanie", "Éthiopie"],
+      "answer": "Tanzanie"
+    },
+    {
+      "question": "Quel pays a le plus grand nombre d’îles ?",
+      "options": ["Indonésie", "Suède", "Philippines", "Japon"],
+      "answer": "Suède"
+    },
+    {
+      "question": "Quel est le plus grand pays du monde par superficie ?",
+      "options": ["Chine", "Canada", "Russie", "Brésil"],
+      "answer": "Russie"
+    },
+    {
+      "question": "Quel pays se situe entre la France et l’Allemagne ?",
+      "options": ["Belgique", "Suisse", "Luxembourg", "Espagne"],
+      "answer": "Luxembourg"
+    },
+    {
+      "question": "Quelle mer est la plus salée ?",
+      "options": ["Mer Noire", "Mer Morte", "Mer Méditerranée", "Mer Rouge"],
+      "answer": "Mer Morte"
+    },
+    {
+      "question": "Quel est le plus haut sommet d’Afrique ?",
+      "options": ["Kilimandjaro", "Mont Kenya", "Mont Cameroun", "Simien"],
+      "answer": "Kilimandjaro"
+    }
+  ]
+  

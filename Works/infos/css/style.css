@@ -1,0 +1,54 @@
+*{
+    padding: 20px;
+    margin: 03px;
+}
+body{
+    width: 50%;
+    text-align: center;
+}
+button{
+    background:linear-gradient(white,GREEN,white);
+    color:orange;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+     box-shadow: 5px 2px 3px 3px  white;
+    font-family: sans-serif;
+
+
+
+}
+.titre{
+    background: teal;
+    align-items: center;
+    margin-top: -7px;
+    margin-bottom: 30%;
+    border-radius: 10px;
+    color:white;
+.Jolie{
+    color: orangered;
+     
+     border-radius: 50%;
+
+}
+}
+h1{
+    color: blue;
+    font-size: 30px;
+    height: 10px;
+}
+P{
+    color: black;
+    margin-top: 2px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+h4{
+    color: blue;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 8px  black;
+
+}

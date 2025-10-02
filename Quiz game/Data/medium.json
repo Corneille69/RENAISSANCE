@@ -1,0 +1,77 @@
+[
+    {
+      "question": "Quel fleuve traverse Paris ?",
+      "options": ["La Seine", "La Loire", "Le Rhône", "La Garonne"],
+      "answer": "La Seine"
+    },
+    {
+      "question": "Combien de pays ont une frontière avec la France ?",
+      "options": ["5", "6", "7", "8"],
+      "answer": "7"
+    },
+    {
+      "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+      "options": ["Auckland", "Wellington", "Christchurch", "Hamilton"],
+      "answer": "Wellington"
+    },
+    {
+      "question": "Quel est le plus haut sommet de l'Europe ?",
+      "options": ["Mont Blanc", "Matterhorn", "Elbrouz", "Monte Rosa"],
+      "answer": "Elbrouz"
+    },
+    {
+      "question": "Quelle mer borde l'Égypte ?",
+      "options": ["Mer Noire", "Mer Rouge", "Mer d'Arabie", "Mer Caspienne"],
+      "answer": "Mer Rouge"
+    },
+    {
+      "question": "Quelle est la capitale du Canada ?",
+      "options": ["Toronto", "Ottawa", "Vancouver", "Montréal"],
+      "answer": "Ottawa"
+    },
+    {
+      "question": "Dans quel pays se trouve le Machu Picchu ?",
+      "options": ["Colombie", "Pérou", "Brésil", "Bolivie"],
+      "answer": "Pérou"
+    },
+    {
+      "question": "Quel pays a le plus de fuseaux horaires ?",
+      "options": ["États-Unis", "Chine", "France", "Russie"],
+      "answer": "France"
+    },
+    {
+      "question": "Quel désert se trouve en Namibie ?",
+      "options": ["Désert de Gobi", "Désert de Sonora", "Désert du Kalahari", "Désert du Namib"],
+      "answer": "Désert du Namib"
+    },
+    {
+      "question": "Quel pays est enclavé (sans accès à la mer) ?",
+      "options": ["Suisse", "Maroc", "Portugal", "Italie"],
+      "answer": "Suisse"
+    },
+    {
+      "question": "Quelle île est la plus grande du monde ?",
+      "options": ["Australie", "Groenland", "Madagascar", "Nouvelle-Guinée"],
+      "answer": "Groenland"
+    },
+    {
+      "question": "Quelle est la capitale de la Corée du Sud ?",
+      "options": ["Séoul", "Pyongyang", "Busan", "Tokyo"],
+      "answer": "Séoul"
+    },
+    {
+      "question": "Quel pays d'Afrique est le plus peuplé ?",
+      "options": ["Égypte", "Afrique du Sud", "Nigeria", "Éthiopie"],
+      "answer": "Nigeria"
+    },
+    {
+      "question": "Dans quel océan se trouve Madagascar ?",
+      "options": ["Océan Atlantique", "Océan Indien", "Océan Pacifique", "Mer de Chine"],
+      "answer": "Océan Indien"
+    },
+    {
+      "question": "Quel détroit sépare l’Espagne du Maroc ?",
+      "options": ["Détroit d'Ormuz", "Détroit de Gibraltar", "Canal de Suez", "Détroit de Béring"],
+      "answer": "Détroit de Gibraltar"
+    }
+  ]

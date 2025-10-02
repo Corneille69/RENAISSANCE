@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculatrice de prêt</title>
+
+
+  <link rel="stylesheet" href="/css/style.css" />
+  
+</head>
+<body>
+  <header class="header">
+    <img src="images/R (1).jpg" alt="images/R (1) (3).jpg" class="images/R (1) (3).jpg" />
+    <h1>Calculatrice de prêt intelligente</h1>
+    <img src="images/images.jpg" alt="images/images.jpg" class="images/images.jp" />
+  </header>
+ <div class="calculator">
+    <div class="inputs">
+      <label>Montant du prêt FCFA</label>
+      <input type="number" id="loanAmount" />
+
+      <label>Taux d'intérêt annuel (%)</label>
+      <input type="number" id="interestRate" step="0.01" />
+
+      <label>Durée (années)</label>
+      <input type="number" id="loanTerm" />
+
+      <div class="buttons">
+        <button onclick="calculateLoan()">Calculer</button>
+        <button onclick="resetCalculator()">Effacer</button>
+      </div>
+    </div>
+
+    <div class="results">
+      <p>Mensualité : <span id="monthlyPayment">0.00</span> FCFA</p>
+      <p>Total à rembourser : <span id="totalPayment">0.00</span> FCFA</p>
+      <p>Intérêts totaux : <span id="totalInterest">0.00</span> FCFA</p>
+
+       <div class="logo-container">
+  <img src="images/R (2) 10000FCFA (1).jpeg" alt="images/R (2) 10000FCFA (1).jpeg" class="images/R (2) 10000FCFA (1).jpeg" />
+  
+</div>
+<div class="logo-container2">
+  <img src="images/L'ARGENT.jpg" alt="images/L'ARGENT.jpg" class="images/L'ARGENT.jpg" />
+  
+</div>
+
+
+    </div>
+    
+
+  <canvas id="loanChart" width="220" height="220"></canvas>
+
+    <footer>Made in Burkina Faso</footer>
+  </div>
+
+  
+
+  <script src="/js/style.js"></script>
+  
+</body>
+</html>

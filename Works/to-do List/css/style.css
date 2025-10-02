@@ -1,0 +1,48 @@
+body{
+    background:linear-gradient( blue, violet)
+    
+}
+.container {
+    border-radius: 10px;
+    
+    
+    
+
+}
+h1{
+    text-align: left;
+    color: blue;
+    
+}
+button{
+    
+    text-align: right;
+    background-color: brown;
+    margin-left: 110px;
+    width: 25%;
+    height: 55px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    
+}
+fieldset{
+    border-radius: 10px;
+    border: solid 2px white;
+    background-color: white;
+    height:30rem ;
+    width: 70%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+input{
+    margin-left: 15%;
+    border: solid 2px white;
+}
+.task{
+    margin-top: 7%;
+    margin-left:13% ;
+}
+
+
+    

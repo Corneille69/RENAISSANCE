@@ -1,0 +1,378 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar li a:hover {
+  color: #0077ff;
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #cc5200;
+}
+
+/* ===== BANNIÈRE ===== */
+.baniere {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("../images/photo1.jpg") no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.baniere h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.baniere p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.baniere .btn1 {
+  background: #0077ff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.baniere .btn1:hover {
+  background: #0055aa;
+}
+
+/* ===== TITRES ===== */
+.titre {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 60px 0 30px;
+  color: #0077ff;
+}
+
+.titre span {
+  color: #ff6600;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== RÈGLEMENT ===== */
+.reglement {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.reglement .box {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.reglement img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* ===== MEMBRES ===== */
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.membre {
+  text-align: center;
+}
+
+.membre img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.Organisation{
+  margin: 20%;
+
+}
+h3{
+  
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1.8em;
+  color:   crimson ;
+  width: 45%;
+  position: relative;
+  left: 30%;
+  text-transform: uppercase;
+}
+.or{
+  color: #0077ff;
+  font-size: 1.3em;
+}
+
+/* ===== GALERIE ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== BUREAU ===== */
+.bureau {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* ===== GROUPES ===== */
+.groupes {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.groupes .btn1, .groupes .btn2 {
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  color: white;
+}
+
+.groupes .btn1 { background: #0077ff; }
+.groupes .btn1:hover { background: #0055aa; }
+
+.groupes .btn2 { background: #ff6600; }
+.groupes .btn2:hover { background: #cc5200; }
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+/* === Menu mobile === */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* === Menu burger === */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    padding: 1rem;
+  }
+  .navbar li {
+    margin: 10px 0;
+  }
+}
+
+/* === Mode sombre === */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+/* === Galerie modale === */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+ 
+  
+}
+
+/* === Animation scroll === */
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-in-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Mode sombre === */
+.dark-mode {
+  background: #111;
+  color: #eee;
+}
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* === Galerie Lightbox === */
+#lightbox {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#lightbox.active {
+  display: flex;
+}
+#lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+}
+

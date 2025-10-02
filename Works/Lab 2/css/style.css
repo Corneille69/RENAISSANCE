@@ -1,0 +1,12 @@
+h1{
+    border: solid 8px red;
+    text-align: justify;
+    text-transform: capitalize;
+    font-family: cursive;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin-left: 30%;
+    background-color: beige;
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .ballon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .modification {
+            width: 300px; 
+            border-radius: 10px;
+        }
+
+        .container {
+            max-width: 400px;
+        }
+
+        h1 {
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        button {
+            width: 100%;
+            background-color: rgb(16, 19, 19);
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+    }
+    .modification img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            }
+</style>
+<body>
+    <div class="ballon">
+    <div class="modification">
+        <img src="photos images.png" alt="">
+    </div>
+    <div class="container">
+    <h1>stay updated!</h1>
+    <p>join 60,000+ product managers receiving monthly <br> updates on</p>
+    <span>Product discovery and building what matters <br></span>
+    <span>Measuring to ensure updates are a success<br> </span>
+    <span>And much more<br></span>
+    <form action="">
+        <fieldset>
+            <legend>email</legend>
+            <input type="email" name="email" id="your email">
+        </fieldset>
+        <button>Souscribe to monthly </button>
+    </form>
+</div>
+</div>
+</body>
+</html>

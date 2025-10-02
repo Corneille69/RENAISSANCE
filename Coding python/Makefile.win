@@ -1,0 +1,34 @@
+# Project: Project1
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = "../../../OneDrive/Documents/programme\ c/proj/main.o" "Matiere\ tableau.o" Matiéretableau.o
+LINKOBJ  = "../../../OneDrive/Documents/programme c/proj/main.o" "Matiere tableau.o" Matiéretableau.o
+LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Program Files (x86)\Embarcadero\Dev-Cpp\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+"../../../OneDrive/Documents/programme\ c/proj/main.o": ../../../OneDrive/Documents/programme\ c/proj/main.c
+	$(CC) -c "../../../OneDrive/Documents/programme c/proj/main.c" -o "../../../OneDrive/Documents/programme c/proj/main.o" $(CFLAGS)
+
+"Matiere\ tableau.o": Matiere\ tableau.c
+	$(CC) -c "Matiere tableau.c" -o "Matiere tableau.o" $(CFLAGS)
+
+Matiéretableau.o: Matiéretableau.c
+	$(CC) -c Matiéretableau.c -o Matiéretableau.o $(CFLAGS)

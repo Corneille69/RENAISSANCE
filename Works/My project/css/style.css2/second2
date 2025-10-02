@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+background-color:rgba(32, 77, 226, 0.918);
+}
+.container{
+    width: 60%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.login-form{
+    height: 65vh;
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius:10px;
+    padding: 25px;
+    justify-content: center;
+    
+}
+.inner-form{
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.login-header{
+width: 100%;
+height: 60px;
+border: 2px solid rgb(30, 128, 6);
+}
+.header-top>h1{
+    color:#0ABAB5
+}
+.header-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.header-middle>P{
+    font-size: 12px;
+    margin-top: 8px;
+}
+.header-middle>hr{
+    width: 50%;
+    height: 5px;
+    background-color: #ba0aa8;
+    border: none;
+}
+.body-form input{
+    padding: 3%;
+    margin: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(0, 98, 255);
+    width: 85%;
+    border-radius: 8px;
+}
+.login-button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.login-header input{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    border: none;
+    background: #0abab450;
+      color: rgba(255, 255, 255, 0.366);
+      font-weight: bold;
+}
+.google-signin input{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    border: none;
+    background: #0ABAB5;
+    color: rgba(255, 255, 255, 0.433);
+    font-size: small;
+    font-weight:bold ;
+}
+.google-signin{
+    padding: 9%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+p{
+    font-size: small;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

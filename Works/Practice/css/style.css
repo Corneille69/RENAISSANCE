@@ -1,0 +1,25 @@
+*{
+    margin: 40px;
+    padding: 20px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../R.jpeg);
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-attachment: fixed;
+    color: blue;
+    background-size: cover;
+
+}
+
+.content{
+box-sizing: border-box;
+padding: 40px;
+background: yellow;
+    
+}

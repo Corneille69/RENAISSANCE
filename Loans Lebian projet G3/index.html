@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculatrice de Prêt</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Lien vers Chart.js -->
+</head>
+<body>
+       
+      
+
+  <div class="container">
+    <h1>Calculatrice de Prêt</h1>
+    <div class="logo">
+  <img src="images/images.jpg" alt="images/images.jpg" />
+</div>
+ <div class="logo2">
+  <img src="images/R (1) (3).jpg" alt="images/R (1) (3).jpg" />
+</div>
+
+
+    <!-- Champs -->
+    <div class="form-group">
+      <label>Montant du prêt (FCFA)</label>
+      <input type="number" id="loanAmount" />
+    </div>:
+
+    <div class="form-group">
+      <label>Taux d'intérêt annuel (%)</label>
+      <input type="number" id="interestRate" />
+    </div>
+    <div class="form-group">
+      <label>Durée du prêt (années)</label>
+      <input type="number" id="loanTerm" />
+    </div>
+    <button onclick="calculateAndDisplay()">Calculer</button>
+    <button onclick="resetCalculator()">Effacer</button>
+
+    
+
+    <!-- Résultats -->
+    <div class="results">
+      <h3>Mensualité :<span id="monthlyPayment">0.00</span>FCFA</h3>
+      <h3>Total :<span id="totalPayment">0.00</span>FCFA</h3>
+      <h3>Intérêts :<span id="totalInterest">0.00</span>FCFA</h3>
+      
+    </div>
+
+    <!-- Graphique -->
+    <canvas id="repaymentChart"></canvas>
+     <FOoter>Made in Burkina Faso </FOoter>
+    
+  </div>
+ 
+  
+
+  <script src="./js/style.js"></script> <!-- DOIT être APRES les éléments HTML -->
+</body>
+</html>

@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fefefe;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff5200;
+}
+
+.logo span {
+  color: #000;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #ff5200;
+}
+
+.download-btn {
+
+  padding: 8px 16px;
+  border-radius: 25px;
+  color: #000;
+  border: 1px solid #ff5200;
+  border-radius: 44%;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6% 8%;
+  min-height: 80vh;
+  background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+}
+
+.hero-text h3 {
+  color: #ff5200;
+  font-size: 1.4rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  color: #000;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.green {
+  color: rgb(15, 188, 15);
+}
+
+.blue {
+  color: #0616c9e9;
+  text-transform: capitalize;
+  text-decoration-style:solid;
+  
+}
+
+.Order {
+  color: #777;
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff5200;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons i {
+  margin: 10px 10px 0 0;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ff5200;
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 320px;
+  border-radius: 60%;
+}
+
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.ai {
+  top: 10px;
+  left: -80px;
+}
+
+
+.ps {
+  top: 45px;
+  right: -100px;
+  object-fit: contain;
+  padding: -8px;
+  border-radius: 10px;
+}
+
+
+
+
+
+.figma {
+  bottom: -5px;
+  left: 45%;
+  transform: translateX(-50%);
+}

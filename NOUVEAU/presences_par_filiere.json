@@ -1,0 +1,13 @@
+{
+    "Fili\u00e8re par d\u00e9faut": {
+        "etudiants": [],
+        "jours_cours": [
+            0,
+            1,
+            2,
+            3,
+            4
+        ],
+        "presences": {}
+    }
+}

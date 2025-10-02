@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    table {
+        margin-top: 20px;
+    }
+    table, tr, td {
+        border: 1px solid;
+    } 
+
+    td {
+        padding:10px;
+    }
+</style>
+<title>Working with remote data</title>
+  <meta charset="utf-8"/>
+  <script>var membersDiv = document.querySelector("#members");
+
+function search() {
+    var bandName = document.querySelector("#bandName").value;
+    console.log(bandName);
+    
+    // API for getting info about an artist/band by name
+    var url = encodeURI("https://wasabi.i3s.unice.fr/api/v1/artist/name/" + bandName);
+
+    console.log(url);
+    membersDiv.innerHTML = "";
+    fetch(url)
+     .then(function(response) {
+      // response is a json string,
+      // convert it to a pure JavaScript object
+       return response.json();
+     })
+     .then(function(band) {
+        membersDiv.innerHTML += "<h2>Current and old members of " +band.name + "</h2>"
+        displayMembers(band.members);
+    })
+     .catch(function(error) {
+        console.log('Error during fetch: ' + error.message);
+        membersDiv.innerHTML += "<h2>No Results</h2>"
+     });
+  }
+
+function displayMembers(listOfMembers) {
+        var table = document.createElement("table");
+          
+        listOfMembers.forEach(function(member) {
+          // iterate on the array of members
+          var row = table.insertRow();
+          var memberNameCell = row.insertCell();
+          memberNameCell.innerHTML = member.name;
+          
+          // Show instruments played by this member
+          var instrumentCell = row.insertCell();
+          member.instruments.forEach(function(inst, index) {
+             instrumentCell.innerHTML += inst;
+             if(index !== member.instruments.length-1) {
+               instrumentCell.innerHTML += ",";
+             }
+          });
+          var activeYearsCell = row.insertCell();
+          activeYearsCell.innerHTML += member.begin;
+          if(member.end !== "") {
+            activeYearsCell.innerHTML += " - " + member.end;
+          } else {
+            activeYearsCell.innerHTML += " - still active in band";
+          }
+          
+        });
+      membersDiv.appendChild(table);
+}</script>
+</head>
+<body>
+  <p>
+    Type in the name of a Rock Band (ex: "The Rolling Stones", "Metallica", "The Who", "The Beatles", "Led Zeppelin", "Van Halen", "Grateful Dead").</p>
+  
+  <label for="bandName">Band Name: </label>
+  <input type="text" id="bandName" value="Metallica">
+  <button onclick="search();">Look for members</button>
+  <div id="members"></div>
+</body>
+</html>

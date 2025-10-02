@@ -1,0 +1,59 @@
+div{
+    
+    height: 60px;
+    width: 60px;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: sans-serif;
+  
+
+
+}
+body{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    background-color:beige;
+    width: 50%;
+    height: 30vh;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+      transform: scale(0.6);
+    
+}
+.div-1,.div-2,.div-3,.div-4,.div-5{
+    height: 80px;
+    width: 80px;
+    color:white;
+    margin: 10px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid antiquewhite;
+   
+}
+
+.div-1{
+    background-color: red;
+}
+.div-2{
+    background-color: blue;
+}
+.div-3{
+    background-color: green;
+}
+.div-4{
+    background-color: chocolate;
+}
+.div-5{
+    background-color: purple;
+}

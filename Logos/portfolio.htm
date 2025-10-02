@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio </title>
+    <link rel="stylesheet" href="portfolio_fichiers/style.css">
+</head>
+<body>
+    <!-- En-tête avec logo en haut à droite -->
+    <header>
+        <button><h3>ENSEIGNEMENT DE LA JAD LOCAL VIIM-KUILGA/SC2/KDG</h3></button>
+        <div class="logo">
+            <img src="portfolio_fichiers/LOGO.jpg" alt="images/LOGO.jpg">
+        </div>
+    </header>
+
+    <!-- Contenu principal : texte à gauche, image à droite -->
+    <main class="container">
+        <!-- Texte à gauche -->
+        <div class="text-section">
+            <h1>THEME:    LE JEUNE CHRETIEN ET L'UTILISATION DES RESEAUX SOCIAUX EN TEMPS DE CRISE.</h1>
+            <p>
+                
+            </p>
+           
+        </div>
+
+        <!-- Image à droite -->
+        <div class="image-section">
+            <img src="portfolio_fichiers/reseax.jpg" alt="images/reseax.jpg">
+        </div>
+      
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

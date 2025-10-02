@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    perspective: 1000px;
+    color: blue;
+}
+.box-3d{
+    width: 229PX;
+    height: 245px;
+    display: flex;
+    transform-style: preserve-3d;
+    background:linear-gradient(white,white,green,green);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    transition: 1s ease;
+    border: solid 4PX  green;
+    border-radius: 15px;
+
+
+}
+.box-3d:hover{
+    transform: rotateZ(10deg) rotateX(0deg) rotateY(-40deg);
+    box-shadow: 10px 2px 30px rgba(0, 0, 0, 0.6);
+
+}
+
+.box-3d h2{
+    transform: translateZ(20px);
+    transition: 2s ease;
+    text-align: center;
+    width: 29VH;
+   
+    
+}
+.box-3d h2:hover{
+    transform: translateZ(60px);
+   
+}
+.box-3d SPAN{
+    color:black;
+    transform: translateZ(30px);
+    transition: 2s ease;
+    font-size: larger;
+    text-align: center;
+    font-family: sans-serif;
+
+    
+}
+.box-3d h2:hover{
+    transform: translateZ(40px);
+   
+}
+ul{
+    color: gold;
+    font-size: larger;
+    text-align: center;
+    transition: 3s ease;
+    transform: translateZ(25px);
+
+
+}
+.button{
+    background-color: blue;
+}

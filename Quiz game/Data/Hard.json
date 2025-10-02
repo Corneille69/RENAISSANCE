@@ -1,0 +1,77 @@
+[
+    {
+      "question": "Quel est le pays qui possède le plus de frontières terrestres avec d'autres pays ?",
+      "options": ["Chine", "Russie", "Brésil", "France"],
+      "answer": "Chine"
+    },
+    {
+      "question": "Quel est le plus grand lac d'eau douce du monde par superficie ?",
+      "options": ["Lac Victoria", "Lac Tanganyika", "Lac Baïkal", "Lac Supérieur"],
+      "answer": "Lac Supérieur"
+    },
+    {
+      "question": "Dans quel pays trouve-t-on la ville la plus au nord du monde ?",
+      "options": ["Islande", "Norvège", "Canada", "Russie"],
+      "answer": "Norvège"
+    },
+    {
+      "question": "Quel pays d'Asie n'a pas de littoral ?",
+      "options": ["Bhoutan", "Vietnam", "Malaisie", "Thaïlande"],
+      "answer": "Bhoutan"
+    },
+    {
+      "question": "Quel est le point culminant de l'Océanie ?",
+      "options": ["Puncak Jaya", "Mauna Kea", "Mont Wilhelm", "Mont Cook"],
+      "answer": "Puncak Jaya"
+    },
+    {
+      "question": "Quelle ville est traversée par les fleuves Rhône et Saône ?",
+      "options": ["Genève", "Lyon", "Avignon", "Toulouse"],
+      "answer": "Lyon"
+    },
+    {
+      "question": "Quel pays a le plus de volcans actifs ?",
+      "options": ["Islande", "Japon", "Indonésie", "Mexique"],
+      "answer": "Indonésie"
+    },
+    {
+      "question": "Quelle est la capitale du Kazakhstan ?",
+      "options": ["Astana", "Almaty", "Tachkent", "Bakou"],
+      "answer": "Astana"
+    },
+    {
+      "question": "Quel est le pays africain le plus vaste ?",
+      "options": ["Algérie", "Soudan", "Libye", "République Démocratique du Congo"],
+      "answer": "Algérie"
+    },
+    {
+      "question": "Quel archipel appartient à la France dans l'océan Pacifique ?",
+      "options": ["Guadeloupe", "Nouvelle-Calédonie", "Réunion", "Mayotte"],
+      "answer": "Nouvelle-Calédonie"
+    },
+    {
+      "question": "Quel est le désert le plus sec du monde ?",
+      "options": ["Désert du Sahara", "Désert de Gobi", "Désert d'Atacama", "Désert du Kalahari"],
+      "answer": "Désert d'Atacama"
+    },
+    {
+      "question": "Quel pays est entièrement enclavé entre deux autres pays ?",
+      "options": ["Lesotho", "Vatican", "Andorre", "Liechtenstein"],
+      "answer": "Lesotho"
+    },
+    {
+      "question": "Dans quel pays se trouve le mont Elbrouz ?",
+      "options": ["Géorgie", "Russie", "Ukraine", "Turquie"],
+      "answer": "Russie"
+    },
+    {
+      "question": "Quelle est la capitale de la Papouasie-Nouvelle-Guinée ?",
+      "options": ["Port Vila", "Suva", "Port Moresby", "Honiara"],
+      "answer": "Port Moresby"
+    },
+    {
+      "question": "Quel pays possède le plus de langues officielles ?",
+      "options": ["Inde", "Afrique du Sud", "Suisse", "Bolivie"],
+      "answer": "Bolivie"
+    }
+  ]

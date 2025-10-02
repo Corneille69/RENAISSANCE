@@ -1,0 +1,51 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion - La Renaissance</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+
+      <div class="login-container">
+        
+        <h1>LA Renaissance</h1>
+          <h2>🔐 Connexion sécurisée</h2>
+          <form id="loginForm">
+              <div class="contract">
+                  <textarea name="name" id="name" placeholder="name"></textarea>
+              </div>
+              <div class="contract">
+          <input type="password" id="password" placeholder="Mot de passe" required>
+          </div>
+          <div class="contract">
+          <button type="submit">Connexion</button>
+          </div>
+          <footer>Une famille, un esprit uni</footer>
+          </form>
+          <p1 id="error-message" class="error ☠️"></p1>
+          </div>
+        
+
+      </div>
+
+    <script>
+      const motDePasseCorrect = "renaissance2025";
+
+      document.getElementById("loginForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const password = document.getElementById("password").value;
+
+        if (password === motDePasseCorrect) {
+          sessionStorage.setItem("accesAutorise", "oui");
+          window.location.href = "home.html"; // Redirige vers l’animation
+        } else {
+          document.getElementById("error-message").textContent = "Mot de passe incorrect.";
+        }
+      });
+    </script>
+  </section>
+</body>
+</html>

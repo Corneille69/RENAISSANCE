@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrateur - Rima Elegance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="conatainer">
+        <header>
+        <h1>BIENVENUE CHEZ RIMA ELEGANCE</h1>
+        <div class="admin-header">
+            <h2><i class="fas fa-user-cog"></i> Espace Administrateur</h2>
+        </div>
+        
+    </header>
+    <div class="beauty">
+            <img src="images/Capture d'écran 2025-09-19 073909.png" alt="Images">
+            <button>PDG Mme ZONGO</button>
+            
+
+        </div>
+
+    <main class="container">
+        <section class="admin-panel">
+            <fieldset>
+                <legend><i class="fas fa-plus-circle"></i> Ajouter un nouveau produit</legend>
+                <form id="product-form">
+                    <div class="form-group">
+                        <label for="product-name">Nom du produit</label>
+                        <input type="text" id="product-name" class="nom" placeholder="Entrez le nom du produit" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-description">Description</label>
+                        <textarea id="product-description" class="description" placeholder="Description du produit" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price">Prix (FCFA)</label>
+                        <input type="number" id="product-price" class="price" placeholder="Prix du produit" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-image" class="file-label">
+                            <i class="fas fa-cloud-upload-alt"></i> Choisir une image
+                        </label>
+                        <input type="file" id="product-image" class="image" accept="image/*" required>
+                        <div class="image-preview" id="image-preview"></div>
+                    </div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-check"></i> Valider</button>
+                </form>
+            </fieldset>
+        </section>
+
+        <section class="products-section">
+            <div class="section-header">
+                <h3><i class="fas fa-boxes"></i> Mes produits</h3>
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher un produit...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="products-container">
+                <!-- Les produits seront générés dynamiquement -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de confirmation -->
+    <div class="modal" id="confirmation-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Confirmation</h3>
+            <p>Voulez-vous vraiment supprimer ce produit?</p>
+            <div class="modal-actions">
+                <button class="cancel-btn">Annuler</button>
+                <button class="confirm-btn">Confirmer</button>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

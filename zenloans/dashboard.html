@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Prêts - ZenLoan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html"><h1>ZenLoan</h1></a>
+            </div>
+            <ul class="nav__list" id="navList">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="calculator.html">Simulateur</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><button id="logoutBtn" class="btn-logout">Déconnexion</button></li>
+            </ul>
+            <div class="nav__hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Mes Prêts</h1>
+                <div class="user-info">
+                    <span id="userName">Utilisateur</span>
+                </div>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <h3>Total emprunté</h3>
+                    <span class="stat-value" id="totalBorrowed">0 €</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Intérêts totaux</h3>
+                    <span class="stat-value" id="totalInterestStats">0 €</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Nombre de prêts</h3>
+                    <span class="stat-value" id="totalLoans">0</span>
+                </div>
+            </div>
+
+            <div class="dashboard-controls">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Rechercher un prêt...">
+                </div>
+                <div class="filter-controls">
+                    <select id="typeFilter">
+                        <option value="">Tous les types</option>
+                        <option value="immobilier">Immobilier</option>
+                        <option value="auto">Automobile</option>
+                        <option value="personnel">Personnel</option>
+                        <option value="travaux">Travaux</option>
+                    </select>
+                    <button id="addLoanBtn" class="btn-primary">+ Nouveau prêt</button>
+                </div>
+            </div>
+
+            <div class="loans-grid" id="loansGrid">
+                <!-- Les cartes de prêts seront générées dynamiquement -->
+            </div>
+
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <h2>Aucun prêt sauvegardé</h2>
+                <p>Commencez par créer votre premier prêt avec le simulateur</p>
+                <a href="calculator.html" class="btn-primary">Aller au simulateur</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal pour les détails du prêt -->
+    <div class="modal" id="loanModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Détails du prêt</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="loan-details" id="loanDetails">
+                    <!-- Contenu généré dynamiquement -->
+                </div>
+                <div class="modal-chart">
+                    <canvas id="modalChart" width="400" height="400"></canvas>
+                </div>
+                <div class="amortization-table-modal">
+                    <h3>Tableau d'amortissement complet</h3>
+                    <div class="table-container">
+                        <table id="modalAmortizationTable">
+                            <thead>
+                                <tr>
+                                    <th>Mois</th>
+                                    <th>Mensualité</th>
+                                    <th>Capital</th>
+                                    <th>Intérêts</th>
+                                    <th>Capital restant</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modalAmortizationBody">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="exportModalBtn" class="btn-secondary">Exporter CSV</button>
+                <button id="editLoanBtn" class="btn-primary">Modifier</button>
+                <button id="deleteLoanBtn" class="btn-danger">Supprimer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
+

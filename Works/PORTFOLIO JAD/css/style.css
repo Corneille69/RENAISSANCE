@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background:linear-gradient(white,black);
+    padding: 20px;
+    height: 50%;
+    width: 85%;
+}
+
+/* En-tête avec logo à droite */
+header {
+    display: flex;
+    justify-content: flex-end;
+    background:linear-gradient(rgba(0, 0, 0, 0.093));
+    height: 30%;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 58px;
+    background-color: #555;
+
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background:linear-gradient(white,yellowgreen);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex-direction: row; /* Texte à gauche, image à droite */
+}
+
+/* Texte à gauche */
+.text-section {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+}
+
+.text-section h1 {
+    font-size:2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 30%;
+    width: 80%;
+}
+
+.text-section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.text-section h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.text-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+/* Image à droite */
+.image-section {
+    flex: 1;
+    background:linear-gradient(yellowgreen,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 500vh;
+}
+button{
+    margin-right: 5%;
+    height:     10vh;
+    background:linear-gradient(yellowgreen,red);
+    border: solid ;
+    border-radius: 10px;
+    color: white;
+}

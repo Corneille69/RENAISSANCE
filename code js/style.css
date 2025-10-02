@@ -1,0 +1,52 @@
+
+@import url();
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.ORDER{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: left;
+
+
+}
+.beauty{
+    display: flex;
+    image-orientation: right;
+    height: 70px;
+    width: 120vh;
+
+    
+}
+.Icons{
+    display: flex;
+    margin-left: 20%;
+    text-align: center;
+}
+OL{
+    margin-left: 5px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    text-align: justify;
+    font-size: large;
+}
+h1{
+    color: aqua;
+    background-color: blue;
+    width: 70%;
+    border:6px solid greenyellow ;
+    text-align: center;
+    margin-left: 20%;
+}
+button{
+    background-color:orchid;
+    text-align: center;
+    margin-left:30% ;
+}
+p{
+    text-align: center;
+}

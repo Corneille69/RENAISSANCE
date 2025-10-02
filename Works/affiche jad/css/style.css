@@ -1,0 +1,108 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(Green,white);
+      border: solid 8px black;
+      border-radius: 5px;
+      height: 60%;
+    
+
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px;
+
+    }
+
+    .text-section {
+      width: 50%;
+      padding-right: 30px;
+    }
+
+    .text-section h1 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .text-section p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .slogan {
+      font-size: 22px;
+      color: #16a085;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background:linear-gradient( #2980b9,violet);
+    }
+
+    .image-section {
+      width: 60%;
+      height: 60%;
+      display: flex;
+      justify-content: flex-end;
+
+    }
+
+    .image-section img {
+      max-width: 105%;
+      height: 50%;
+      border-radius: 10px;
+       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+     
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80px;
+    }
+    h1{
+      text-align: center;
+      background: linear-gradient(white, violet);
+      border: solid 2px;
+      width: 100%;
+      margin-left: 65px;
+      border-radius: 15PX;
+      height: 30%;
+      
+    }
+   
+    
+    /* En-tête avec logo à droite */
+header {
+    display: flex;
+    justify-content: flex-end;
+    background:linear-gradient(rgba(0, 0, 0, 0.093));
+    height: 30%;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 58px;
+    background-color: #555;
+    }
+    

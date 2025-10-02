@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    perspective: 1000px;
+}
+.box-3d{
+    width: 220PX;
+    height: 225px;
+    display: flex;
+    transform-style: preserve-3d;
+    background:linear-gradient(orange,blue);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    transition: 1s ease;
+
+
+}
+.box-3d:hover{
+    transform: rotateZ(10deg) rotateX(0deg) rotateY(-40deg);
+    box-shadow: 10px 2px 30px rgba(0, 0, 0, 0.6);
+
+}
+
+.box-3d h2{
+    transform: translateZ(0px);
+    transition: 2s ease;
+    text-align: center;
+   
+    
+}
+.box-3d h2:hover{
+    transform: translateZ(60px);
+   
+}
+.box-3d SPAN{
+    color: rgb(55, 226, 12);
+    transform: translateZ(60px);
+    transition: 2s ease;
+    
+}
+.box-3d h2:hover{
+    transform: translateZ(40px);
+   
+}
+ul{
+    color: white;
+    font-family: cursive;
+    text-align: center;
+}
